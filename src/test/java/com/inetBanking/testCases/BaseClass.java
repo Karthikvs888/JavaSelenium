@@ -51,7 +51,7 @@ public class BaseClass {
 			ChromeOptions option = new ChromeOptions();
             option.addArguments("--remote-allow-origins=*");
             
-			driver = new ChromeDriver(option);
+			driver = new ChromeDriver(option); //
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		}
